@@ -12,6 +12,12 @@ body {
   box-shadow: 2px 1px 7.5px lightgray;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.navbar > :last-child {
+  margin-right: 15px;
+  padding: 12px 18px;
 }
 
 .navbar img {
@@ -23,7 +29,6 @@ body {
   width: 100%;
   display: flex;
   border: 1px solid magenta;
-  justify-content: space-between;
   list-style-type: none;
   gap: 15px;
 }

@@ -13,6 +13,7 @@ function Navbar() {
       <ul>
         <li className="nav-links">{element}</li>
       </ul>
+      <button>Sing Up / Login</button>
     </div>
   );
 }
