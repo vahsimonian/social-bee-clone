@@ -9,7 +9,7 @@ function Navbar() {
   const element = navbarData.map((item) => <li>{item.link}</li>);
   return (
     <div className="navbar">
-      <img src={socialBeeIcon} alt="socialBee" width={150} />
+      <img src={socialBeeIcon} alt="socialBee" />
       <ul>
         <li className="nav-links">{element}</li>
       </ul>

@@ -12,11 +12,14 @@ body {
   box-shadow: 2px 1px 7.5px lightgray;
   display: flex;
 }
+.navbar img {
+}
 
 .nav-links {
-  width: 120%;
+  width: 100%;
   display: flex;
   border: 1px solid magenta;
   justify-content: space-between;
   list-style-type: none;
+  gap: 15px;
 }
