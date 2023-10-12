@@ -1,6 +1,9 @@
 body {
   margin: 0 auto;
   box-sizing: border-box;
+  background: linear-gradient(to bottom, yellow, white);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .navbar {
