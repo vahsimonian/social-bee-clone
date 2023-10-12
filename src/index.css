@@ -4,10 +4,9 @@ body {
   /* background-color: darkgray; */
 }
 
-.app {
+.navbar {
   height: 60px;
   width: 100%;
   background-color: rgba(2, 22, 145, 0.1);
-
-  filter: drop-shadow(1px 1px 8px darkgray);
+  box-shadow: 2px 1px 7.5px lightgray;
 }
