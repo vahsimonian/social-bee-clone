@@ -3,7 +3,12 @@ import { useState } from "react";
 import { navbarData } from "./data";
 
 function Navbar() {
-  return <div className="navbar"></div>;
+  const element = navbarData.map((item) => <li>{item.link}</li>);
+  return (
+    <div className="navbar">
+      <ul>{element}</ul>
+    </div>
+  );
 }
 
 export default Navbar;
