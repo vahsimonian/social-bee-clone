@@ -1,30 +1,30 @@
 export const navbarData = [
   {
     id: 1,
-    link: "about",
+    link: "Home",
   },
   {
     id: 2,
-    link: "portfolio",
+    link: "Platform",
   },
   {
     id: 3,
-    link: "experience",
+    link: "Pricing",
   },
   {
     id: 4,
-    link: "contact",
+    link: "Concierge Services",
   },
   {
     id: 5,
-    link: "contact",
+    link: "Resources",
   },
   {
     id: 6,
-    link: "contact",
+    link: "Book a Call",
   },
   {
     id: 7,
-    link: "contact",
+    link: "Overview",
   },
 ];
