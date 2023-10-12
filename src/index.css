@@ -1,9 +1,11 @@
 body {
   margin: 0 auto;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, yellow, white);
-  background-size: cover;
+  /*  dd */
   background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .navbar {
@@ -11,8 +13,8 @@ body {
   width: 100%;
   background-color: rgba(2, 22, 145, 0.1);
   /* margin-top: -15px; */
-  border: 1px solid magenta;
-  box-shadow: 2px 1px 7.5px lightgray;
+  /* border: 1px solid magenta; */
+  box-shadow: 1px 1px 1px black;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,4 +36,14 @@ body {
   border: 1px solid magenta;
   list-style-type: none;
   gap: 15px;
+}
+
+.home {
+  background: linear-gradient(to bottom, #d4dc00, #fff);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  /* overflow: hidden; */
 }
