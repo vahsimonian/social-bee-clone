@@ -4,15 +4,19 @@ body {
 }
 
 .navbar {
-  height: 60px;
+  height: 80px;
   width: 100%;
   background-color: rgba(2, 22, 145, 0.1);
   /* margin-top: -15px; */
   border: 1px solid magenta;
   box-shadow: 2px 1px 7.5px lightgray;
   display: flex;
+  align-items: center;
 }
+
 .navbar img {
+  margin: 15px 15px;
+  max-width: 250px;
 }
 
 .nav-links {
