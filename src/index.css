@@ -17,7 +17,7 @@ body {
   box-shadow: 1px 1px 1px black;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .navbar > :last-child {
@@ -25,19 +25,19 @@ body {
   padding: 12px 18px;
 }
 
-.navbar img {
+.nav-img {
   margin: 15px 15px;
   max-width: 250px;
 }
 
 .nav-links {
-  width: 120%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border: 1px solid magenta;
   list-style-type: none;
-  gap: 15px;
-  font-size: 24px;
+  gap: 50px;
+  font-size: 32px;
+  cursor: pointer;
 }
 
 .home {
@@ -48,4 +48,8 @@ body {
   padding: 0;
   height: 100vh;
   /* overflow: hidden; */
+}
+
+.sign-btn {
+  padding: 25px;
 }
