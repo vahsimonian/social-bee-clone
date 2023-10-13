@@ -6,11 +6,11 @@ import socialBeeIcon from "../src/assets/socialbee-logo.png";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const element = navbarData.map((item) => <li>{item.link}</li>);
+  const element = navbarData.map((item) => <a>{item.link}</a>);
   return (
     <nav className="navbar">
       <img src={socialBeeIcon} alt="socialBee" className="nav-img" />
-      <ul className="nav-links">{element}</ul>
+      <div className="nav-links">{element}</div>
       <button className="sign-btn">Sing Up / Login</button>
     </nav>
   );

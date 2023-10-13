@@ -32,7 +32,7 @@ body {
 
 .nav-links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   border: 1px solid magenta;
   list-style-type: none;
   gap: 50px;
