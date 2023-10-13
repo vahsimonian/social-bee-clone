@@ -17,12 +17,19 @@ body {
   box-shadow: 1px 1px 1px black;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
-.navbar > :last-child {
+.sign-btn {
   margin-right: 15px;
-  padding: 12px 18px;
+  padding: 15px 40px;
+  background-color: rgb(61, 228, 61);
+  color: white;
+  border-radius: 5px;
+  border: solid 1px black;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
 }
 
 .nav-img {
@@ -30,9 +37,7 @@ body {
   max-width: 250px;
 }
 
-.nav-links {
-  display: flex;
-  justify-content: space-between;
+.nav-link {
   border: 1px solid magenta;
   list-style-type: none;
   gap: 50px;
@@ -51,5 +56,13 @@ body {
 }
 
 .sign-btn {
-  padding: 250px;
+  /* padding: 250px; */
+  cursor: pointer;
+}
+
+.nav-link-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 15px;
 }

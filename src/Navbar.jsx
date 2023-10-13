@@ -7,7 +7,9 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const element = navbarData.map((item) => (
-    <a className="nav-links">{item.link}</a>
+    <ul className="nav-link-wrap">
+      <li className="nav-link">{item.link}</li>
+    </ul>
   ));
   return (
     <nav className="navbar">
