@@ -7,7 +7,12 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const element = navbarData.map((item) => (
-    <li className="nav-link">{item.link}</li>
+    <li className="nav-link">
+      <div>
+        <img src={item.arrowDown} width={75} />
+        {item.link}
+      </div>
+    </li>
   ));
   return (
     <nav className="navbar">
