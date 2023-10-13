@@ -36,7 +36,7 @@ body {
 }
 
 .nav-link {
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
   list-style-type: none;
   /* gap: 50px; */
   font-size: 32px;
@@ -64,5 +64,8 @@ body {
 }
 
 .iva {
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
+  display: flex;
+  gap: 150px;
+  margin-left: 500px;
 }

@@ -14,7 +14,7 @@ function Navbar() {
       <div>
         <img src={socialBeeIcon} alt="socialBee" className="nav-img" />
       </div>
-      <div>{element}</div>
+      <div className="iva">{element}</div>
       <div>
         <button className="sign-btn">Sing Up / Login</button>
       </div>
