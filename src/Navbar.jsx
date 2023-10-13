@@ -8,7 +8,7 @@ function Navbar() {
 
   const element = navbarData.map((item) => (
     <li className="nav-link">
-      <div>
+      <div className="nav-icon-link">
         <img src={item.arrowDown} width={75} />
         {item.link}
       </div>

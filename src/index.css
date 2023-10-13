@@ -66,6 +66,10 @@ body {
 .iva {
   /* border: 1px solid magenta; */
   display: flex;
-  gap: 150px;
-  margin-left: 500px;
+  gap: 15px;
+}
+
+.nav-icon-link {
+  display: flex;
+  align-items: center;
 }
