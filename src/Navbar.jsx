@@ -7,17 +7,17 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const element = navbarData.map((item) => (
-    <div>
-      <ul>
-        <li className="nav-link">{item.link}</li>
-      </ul>
-    </div>
+    <li className="nav-link">{item.link}</li>
   ));
   return (
     <nav className="navbar">
-      <img src={socialBeeIcon} alt="socialBee" className="nav-img" />
-      {element}
-      <button className="sign-btn">Sing Up / Login</button>
+      <div>
+        <img src={socialBeeIcon} alt="socialBee" className="nav-img" />
+      </div>
+      <div>{element}</div>
+      <div>
+        <button className="sign-btn">Sing Up / Login</button>
+      </div>
     </nav>
   );
 }
