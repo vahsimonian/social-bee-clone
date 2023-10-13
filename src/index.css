@@ -12,8 +12,6 @@ body {
   height: 80px;
   width: 100%;
   background-color: rgba(2, 22, 145, 0.1);
-  /* margin-top: -15px; */
-  /* border: 1px solid magenta; */
   box-shadow: 1px 1px 1px black;
   display: flex;
   align-items: center;
@@ -40,7 +38,7 @@ body {
 .nav-link {
   border: 1px solid magenta;
   list-style-type: none;
-  gap: 50px;
+  /* gap: 50px; */
   font-size: 32px;
   cursor: pointer;
 }
@@ -61,8 +59,5 @@ body {
 }
 
 .nav-link-wrap {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-evenly; */
-  /* gap: 15px; */
+  margin-left: -500px;
 }
