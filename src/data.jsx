@@ -29,9 +29,11 @@ export const navbarData = [
   {
     id: 6,
     link: "Book a Call",
+    arrowDown: arrowDown,
   },
   {
     id: 7,
     link: "Overview",
+    arrowDown: arrowDown,
   },
 ];
