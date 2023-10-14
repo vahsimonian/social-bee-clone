@@ -49,7 +49,7 @@ body {
   gap: 15px;
 }
 
-.nav-icon-link {
+.nav-icon-wrap {
   list-style-type: none;
   cursor: pointer;
 }
