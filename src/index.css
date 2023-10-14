@@ -21,7 +21,7 @@ body {
 .sign-btn {
   margin-right: 15px;
   padding: 15px 40px;
-  background-color: rgb(53, 226, 53);
+  background-color: green;
   color: white;
   border-radius: 5px;
   border: solid 1px black;
@@ -64,4 +64,10 @@ body {
   max-width: 150px;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 1250px) {
+  .sign-btn {
+    background-color: red;
+    padding: ;
+  }
 }
