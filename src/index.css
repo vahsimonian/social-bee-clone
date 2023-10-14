@@ -68,6 +68,8 @@ body {
 @media screen and (max-width: 1250px) {
   .sign-btn {
     background-color: red;
-    padding: ;
+    padding: 8px 24px;
+    display: flex;
+    flex-direction: column;
   }
 }

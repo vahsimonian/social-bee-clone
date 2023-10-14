@@ -21,7 +21,10 @@ function Navbar() {
       </div>
       <div className="iva">{element}</div>
       <div>
-        <button className="sign-btn">Sing Up / Login</button>
+        <button className="sign-btn">
+          <span>Sing Up /</span>
+          <span>Login</span>
+        </button>
       </div>
     </nav>
   );
