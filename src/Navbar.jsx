@@ -9,7 +9,7 @@ function Navbar() {
   const element = navbarData.map((item) => (
     <li className="nav-link">
       <div className="nav-icon-link">
-        <img src={item.arrowDown} width={75} />
+        <img src={item.arrowDown} width={25} />
         {item.link}
       </div>
     </li>

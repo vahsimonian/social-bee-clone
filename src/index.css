@@ -39,18 +39,13 @@ body {
   /* border: 1px solid magenta; */
   list-style-type: none;
   /* gap: 50px; */
-  font-size: 32px;
+  /* font-size: 32px; */
   cursor: pointer;
 }
 
 .home {
   background: linear-gradient(to bottom, #d4dc00, #fff);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  margin: 0;
-  padding: 0;
   height: 100vh;
-  /* overflow: hidden; */
 }
 
 .sign-btn {
