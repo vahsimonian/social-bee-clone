@@ -21,7 +21,7 @@ body {
 .sign-btn {
   margin-right: 15px;
   padding: 15px 40px;
-  background-color: rgb(61, 228, 61);
+  background-color: rgb(53, 226, 53);
   color: white;
   border-radius: 5px;
   border: solid 1px black;
@@ -33,14 +33,6 @@ body {
 .nav-img {
   margin: 15px 15px;
   max-width: 250px;
-}
-
-.nav-link {
-  /* border: 1px solid magenta; */
-  list-style-type: none;
-  /* gap: 50px; */
-  /* font-size: 32px; */
-  cursor: pointer;
 }
 
 .home {
@@ -59,12 +51,16 @@ body {
 }
 
 .iva {
-  /* border: 1px solid magenta; */
   display: flex;
   gap: 15px;
 }
 
 .nav-icon-link {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.nav-link {
   display: flex;
   align-items: center;
 }
