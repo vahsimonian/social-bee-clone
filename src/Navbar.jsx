@@ -24,12 +24,12 @@ function Navbar() {
       <div className="iva">
         <span className="curs-point">Home</span>
         {element}
-        <span className="curs-point">Overview</span>
         <span className="curs-point">Book a Call</span>
+        <span className="curs-point">Overview</span>
       </div>
       <div>
         <button className="sign-btn">
-          <span className="curs-point">Sing Up /</span>
+          <span className="curs-point">Sing Up / </span>
           <span className="curs-point">Login</span>
         </button>
       </div>
