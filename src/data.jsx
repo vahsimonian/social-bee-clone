@@ -1,10 +1,11 @@
 import arrowDown from "./assets/down-arrow.png";
+import homeIcon from "./assets/home-icon.png";
 
 export const navbarData = [
   {
     id: 1,
     link: "Home",
-    arrowDown: arrowDown,
+    arrowDown: homeIcon,
   },
   {
     id: 2,
@@ -29,11 +30,11 @@ export const navbarData = [
   {
     id: 6,
     link: "Book a Call",
-    arrowDown: arrowDown,
+    arrowDown: "",
   },
   {
     id: 7,
     link: "Overview",
-    arrowDown: arrowDown,
+    arrowDown: "",
   },
 ];
