@@ -3,6 +3,7 @@ import { useState } from "react";
 import { navbarData } from "./data";
 import socialBeeIcon from "../src/assets/socialbee-logo.png";
 import homeIcon from "./assets/home-icon.png";
+import arrowDown from "./assets/down-arrow.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,8 +11,8 @@ function Navbar() {
   const element = navbarData.map((item) => (
     <div className="nav-icon-wrap">
       <li className="nav-link curs-point">
-        <img src={item.arrowDown} width={25} alt="" />
         {item.link}
+        <img src={arrowDown} width={35} alt="" className="arrow-down-bold" />
       </li>
     </div>
   ));
@@ -23,9 +24,9 @@ function Navbar() {
       <div className="iva">
         <span className="curs-point">Home</span>
         {element}
+        <span className="curs-point">Overview</span>
+        <span className="curs-point">Book a Call</span>
       </div>
-      <span className="curs-point">Overview</span>
-      <span className="curs-point">Book a Call</span>
       <div>
         <button className="sign-btn">
           <span className="curs-point">Sing Up /</span>
