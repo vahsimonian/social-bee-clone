@@ -34,38 +34,49 @@ export const navbarData = [
   },
 ];
 
-const iconsData = [
+export const iconsData = [
   {
-    instagramIcon: instagramIcon,
+    icon: instagramIcon,
+    id: 1,
   },
   {
-    facebookIcon: facebookIcon,
+    icon: facebookIcon,
+    id: 2,
   },
   {
-    youtubeIcon: youtubeIcon,
+    icon: youtubeIcon,
+    id: 3,
   },
   {
-    adIcon: adIcon,
+    icon: adIcon,
+    id: 4,
   },
   {
-    editBoxLine: editBoxLine,
+    icon: editBoxLine,
+    id: 5,
   },
   {
-    heartIcon: heartIcon,
+    icon: heartIcon,
+    id: 6,
   },
   {
-    homeFillIcon: homeFillIcon,
+    icon: homeFillIcon,
+    id: 7,
   },
   {
-    linkedinIcon: linkedinIcon,
+    icon: linkedinIcon,
+    id: 8,
   },
   {
-    pinterestIcon: pinterestIcon,
+    icon: pinterestIcon,
+    id: 9,
   },
   {
-    storeIcon: storeIcon,
+    icon: storeIcon,
+    id: 10,
   },
   {
-    twitterIcon: twitterIcon,
+    icon: twitterIcon,
+    id: 11,
   },
 ];
