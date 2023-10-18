@@ -79,3 +79,9 @@ body {
 .nav-hover:hover {
   background-color: red;
 }
+
+.home-icon {
+  margin: 15px;
+  border: 1px solid black;
+  padding: 15px;
+}
