@@ -79,8 +79,17 @@ body {
   background-color: red;
 }
 
-.home-icon {
+/* .home-icons {
   margin: 15px;
   border: 1px solid black;
-  padding: 15px;
+  padding: 45px;
+  border-radius: 5px;
 }
+
+.icon-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 90%;
+  width: 45%;
+  margin-left: 25px;
+} */
