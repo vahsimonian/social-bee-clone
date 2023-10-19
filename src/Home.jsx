@@ -7,7 +7,11 @@ function Home() {
     <img className="home-icons" src={icon.icon} alt="iocns" />
   ));
 
-  return <div className="icon-container">{icons}</div>;
+  return (
+    <div className="home">
+      <div className="icon-container">{icons}</div>
+    </div>
+  );
 }
 
 export default Home;

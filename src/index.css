@@ -84,6 +84,7 @@ body {
   border: 1px solid black;
   padding: 45px;
   border-radius: 5px;
+  background-color: #fff;
 }
 
 .icon-container {
@@ -92,4 +93,5 @@ body {
   height: 90%;
   width: 45%;
   margin-left: 25px;
+  border: 1px solid black;
 }
