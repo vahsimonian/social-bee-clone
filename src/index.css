@@ -70,17 +70,11 @@ body {
   margin-left: -6px;
 }
 
-.home-icon {
-  display: flex;
-  gap: 5px;
-}
-
 .nav-hover:hover {
   background-color: red;
 }
 
 .home-icons {
-  margin: 15px;
   border: 1px solid black;
   padding: 45px;
   border-radius: 5px;
