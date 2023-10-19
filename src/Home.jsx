@@ -9,7 +9,7 @@ function Home() {
 
   return (
     <div>
-      <div className="icon-container">{icons}</div>
+      <button className="icon-container">{icons}</button>
     </div>
   );
 }
