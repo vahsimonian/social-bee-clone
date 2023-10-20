@@ -73,8 +73,8 @@ body {
 
 .home-icons {
   border: 1px solid black;
-  padding: 35px;
-  max-width: 75px;
+  padding: 55px;
+  max-width: 175px;
   border-radius: 5px;
   background-color: #fff;
   margin: 40px 10px 5px 20px;
@@ -83,9 +83,10 @@ body {
 }
 
 .icon-container {
-  margin-top: 40px;
   display: grid;
+
   grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
   height: 950px;
   width: 35%;
   margin-left: 65px;
