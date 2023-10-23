@@ -4,8 +4,8 @@ import React from "react";
 
 function Home() {
   const icons = iconsData.map((icon) => (
-    <button>
-      <img src={icon.icon} alt="icons" className="home-icons icons" />
+    <button className="icon">
+      <img src={icon.icon} alt="icons" />
     </button>
   ));
 
