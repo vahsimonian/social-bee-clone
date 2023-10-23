@@ -38,61 +38,76 @@ export const iconsData = [
   {
     icon: instagramIcon,
     id: 1,
+    name: "instagram",
   },
   {
     icon: facebookIcon,
     id: 2,
+    name: "facebook",
   },
   {
     icon: youtubeIcon,
     id: 3,
+    name: "youtube",
   },
   {
     icon: adIcon,
     id: 4,
+    name: "advertisement",
   },
   {
     icon: editBoxLine,
     id: 5,
+    name: "boxonline",
   },
   {
     icon: heartIcon,
     id: 6,
+    name: "favorite",
   },
   {
     icon: homeFillIcon,
     id: 7,
+    name: "home",
   },
   {
     icon: linkedinIcon,
     id: 8,
+    name: "linkedin",
   },
   {
     icon: pinterestIcon,
     id: 9,
+    name: "pinterst",
   },
   {
     icon: storeIcon,
     id: 10,
+    name: "store",
   },
   {
     icon: twitterIcon,
     id: 11,
+    name: "x",
   },
   {
     icon: twitterIcon,
     id: 11,
+    name: "x",
   },
   {
     icon: twitterIcon,
     id: 11,
+    name: "x",
   },
   {
     icon: twitterIcon,
     id: 11,
+    name: "x",
   },
   {
     icon: twitterIcon,
     id: 11,
+    name: "x",
   },
 ];
