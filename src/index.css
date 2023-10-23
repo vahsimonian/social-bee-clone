@@ -71,7 +71,7 @@ body {
 
 .home-icons {
   border: 1px solid black;
-  padding: 55px;
+  /* padding: 55px; */
   border-radius: 5px;
   background-color: #fff;
   margin: 40px 10px 5px 20px;
