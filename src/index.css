@@ -80,14 +80,8 @@ body {
   box-shadow: 2px 2px 10px 5px gray;
 }
 
-.icon-container {
-  margin-top: 40px;
-  width: 800px;
-  margin-left: 65px;
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.icons {
-  width: 40px;
+.icon {
+  /* width: 400px; */
+  padding: 40px;
+  margin: 15px;
 }
