@@ -13,7 +13,12 @@ function Home() {
     </button>
   ));
 
-  return <div className="icon-container">{icons}</div>;
+  return (
+    <div className="icon-container">
+      <span className="prompt">Prompt templates</span>
+      <div className="icon-top">{icons}</div>
+    </div>
+  );
 }
 
 export default Home;
