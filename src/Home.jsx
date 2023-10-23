@@ -7,7 +7,7 @@ function Home() {
     // <div></div>
     <button className="icon">
       <div className="icon-name-container">
-        <img src={icon.icon} alt="icons" />
+        <img src={icon.icon} alt="icons" className="icon-img" />
         <span>{icon.name}</span>
       </div>
     </button>

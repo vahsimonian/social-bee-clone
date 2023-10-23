@@ -51,14 +51,29 @@ export const iconsData = [
     name: "youtube",
   },
   {
+    icon: facebookIcon,
+    id: 2,
+    name: "facebook",
+  },
+  {
     icon: adIcon,
     id: 4,
-    name: "advertisement",
+    name: "advert",
   },
   {
     icon: editBoxLine,
     id: 5,
     name: "boxonline",
+  },
+  {
+    icon: adIcon,
+    id: 4,
+    name: "advert",
+  },
+  {
+    icon: adIcon,
+    id: 4,
+    name: "advert",
   },
   {
     icon: heartIcon,
@@ -71,6 +86,11 @@ export const iconsData = [
     name: "home",
   },
   {
+    icon: heartIcon,
+    id: 6,
+    name: "favorite",
+  },
+  {
     icon: linkedinIcon,
     id: 8,
     name: "linkedin",
@@ -81,6 +101,11 @@ export const iconsData = [
     name: "pinterst",
   },
   {
+    icon: linkedinIcon,
+    id: 8,
+    name: "linkedin",
+  },
+  {
     icon: storeIcon,
     id: 10,
     name: "store",
@@ -88,26 +113,26 @@ export const iconsData = [
   {
     icon: twitterIcon,
     id: 11,
-    name: "x",
+    name: "twitter",
   },
   {
     icon: twitterIcon,
     id: 11,
-    name: "x",
+    name: "twitter",
   },
   {
     icon: twitterIcon,
     id: 11,
-    name: "x",
+    name: "twitter",
   },
   {
     icon: twitterIcon,
     id: 11,
-    name: "x",
+    name: "twitter",
   },
   {
     icon: twitterIcon,
     id: 11,
-    name: "x",
+    name: "twitter",
   },
 ];
