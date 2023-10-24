@@ -77,6 +77,8 @@ body {
   background-color: #fff;
   border-radius: 10px;
   /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
 }
 
 .icon {
