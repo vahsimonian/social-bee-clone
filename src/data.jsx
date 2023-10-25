@@ -66,6 +66,11 @@ export const iconsData = [
     name: "boxonline",
   },
   {
+    icon: editBoxLine,
+    id: 5,
+    name: "boxonline",
+  },
+  {
     icon: adIcon,
     id: 4,
     name: "advert",
