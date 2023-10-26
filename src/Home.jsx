@@ -15,7 +15,10 @@ function Home() {
 
   return (
     <div className="icon-container">
-      <span className="prompt">Prompt templates</span>
+      <div className="prompt">
+        <span>Prompt templates</span>
+        <span> > </span>
+      </div>
       <div className="icon-top">{icons}</div>
     </div>
   );
