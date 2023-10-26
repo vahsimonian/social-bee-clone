@@ -4,11 +4,12 @@ import arrowDown from "./assets/arrow-down-line.png";
 import arrowRight from "./assets/arrow-right-line.png";
 
 import React from "react";
-const [isOpen, setIsOpen] = useState(false);
-
-const arrowToggle = isOpen ? "right" : "down";
 
 function Home() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const arrowToggle = isOpen ? arrowDown : arrowRight;
+
   const icons = iconsData.map((icon) => (
     // <div></div>
     <button className="icon">
