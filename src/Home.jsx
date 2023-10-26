@@ -1,5 +1,6 @@
 import { iconsData } from "./data";
 import arrowDown from "./assets/arrow-down-line.png";
+import arrowRight from "./assets/arrow-right-line.png";
 
 import React from "react";
 
