@@ -1,4 +1,5 @@
 import { iconsData } from "./data";
+import arrowDown from "./assets/arrow-down-line.png";
 
 import React from "react";
 
@@ -17,7 +18,7 @@ function Home() {
     <div className="icon-container">
       <div className="prompt">
         <span>Prompt templates</span>
-        <span className="arrow-down"> ↓ </span>
+        <img src={arrowDown} alt="arrow-down" className="arrow-down" />
       </div>
       <div className="icon-top">{icons}</div>
     </div>
