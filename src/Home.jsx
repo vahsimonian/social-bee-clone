@@ -9,6 +9,9 @@ function Home() {
   const [isOpen, setIsOpen] = useState(arrowDown);
 
   const arrowToggle = () => {
+    setTimeout(() => {
+      setIsOpen(arrowRight);
+    }, 500);
     setIsOpen(arrowRight);
   };
 
