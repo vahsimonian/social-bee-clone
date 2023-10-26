@@ -128,10 +128,11 @@ body {
   justify-content: space-between;
 }
 
-.arrow-right {
+.arrow-down {
   margin-right: 30px;
   border: 1px solid black;
   border-radius: 50%;
   padding: 0 5px 2px 5px;
   text-align: center;
+  cursor: pointer;
 }
