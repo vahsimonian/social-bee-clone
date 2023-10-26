@@ -12,7 +12,7 @@ function Home() {
     setIsOpen(!isOpen);
   };
 
-  const arrowCss = isOpen ? arrowDown : arrowRight;
+  const arrow = isOpen ? arrowDown : arrowRight;
 
   const icons = iconsData.map((icon) => (
     // <div></div>
@@ -28,7 +28,12 @@ function Home() {
     <div className="icon-container">
       <div className="prompt">
         <span>Prompt templates</span>
-        <img src={arrowDown} alt="arrow-down" className="arrow-down" />
+        <img
+          src={arrow}
+          alt="arrow-down"
+          className="arrow-down"
+          onClick={arrowToggle}
+        />
       </div>
       <div className="icon-top">{icons}</div>
     </div>
