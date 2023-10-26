@@ -101,6 +101,7 @@ body {
 
 .icon:hover {
   background-color: rgb(246, 246, 246);
+  border: 2px solid black;
 }
 
 .icon-name-container > span {
