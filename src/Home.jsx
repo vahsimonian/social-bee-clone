@@ -6,10 +6,10 @@ import arrowRight from "./assets/arrow-right-line.png";
 import React from "react";
 
 function Home() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(arrowDown);
 
   const arrowToggle = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(arrowRight);
   };
 
   const arrow = isOpen ? arrowRight : arrowDown;
@@ -29,7 +29,7 @@ function Home() {
       <div className="prompt">
         <span>Prompt templates</span>
         <img
-          src={arrow}
+          src={isOpen}
           alt="arrow-down"
           className="arrow-down"
           onClick={arrowToggle}
