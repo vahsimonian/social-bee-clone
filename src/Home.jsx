@@ -16,7 +16,7 @@ function Home() {
 
   const icons = iconsData.map((icon) => (
     // <div></div>
-    <button className="icon">
+    <button className="icon" onClick={arrowToggle}>
       <div className="icon-name-container">
         <img src={icon.icon} alt="icons" className="icon-img" />
         <span>{icon.name}</span>
