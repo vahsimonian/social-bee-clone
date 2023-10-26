@@ -90,6 +90,7 @@ body {
   border-radius: 10px;
   background-color: #fff;
   border: 2px solid lightgray;
+  cursor: pointer;
 }
 
 /* margin-top: 40px; */
@@ -98,6 +99,10 @@ body {
   flex-direction: column;
   text-align: left;
   width: 45px;
+}
+
+.icon:hover {
+  background-color: rgb(246, 246, 246);
 }
 
 .icon-name-container > span {
