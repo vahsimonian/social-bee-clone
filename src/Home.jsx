@@ -12,7 +12,7 @@ function Home() {
     setIsOpen(!isOpen);
   };
 
-  const arrow = isOpen ? arrowDown : arrowRight;
+  const arrow = isOpen ? arrowRight : arrowDown;
 
   const icons = iconsData.map((icon) => (
     // <div></div>
