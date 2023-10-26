@@ -6,10 +6,6 @@ import homeIcon from "./assets/home-icon.png";
 import arrowDown from "./assets/down-arrow.png";
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const arrowToggle = isOpen ? "right" : "down";
-
   const element = navbarData.map((item) => (
     <div className="nav-icon-wrap">
       <li className="nav-link curs-point nav-hover">

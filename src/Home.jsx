@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { iconsData } from "./data";
 import arrowDown from "./assets/arrow-down-line.png";
 import arrowRight from "./assets/arrow-right-line.png";
 
 import React from "react";
+const [isOpen, setIsOpen] = useState(false);
+
+const arrowToggle = isOpen ? "right" : "down";
 
 function Home() {
   const icons = iconsData.map((icon) => (
