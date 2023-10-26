@@ -12,11 +12,9 @@ function Home() {
   const arrowToggle = () => {
     setTimeout(() => {
       setIsOpen(arrowRight);
-    }, 500);
+    }, 300);
     setIsOpen(arrowCircleFill);
   };
-
-  const arrow = isOpen ? arrowRight : arrowDown;
 
   const icons = iconsData.map((icon) => (
     // <div></div>
