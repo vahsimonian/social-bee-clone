@@ -8,7 +8,11 @@ import React from "react";
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const arrowToggle = isOpen ? arrowDown : arrowRight;
+  const arrowToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const arrowCss = isOpen ? arrowDown : arrowRight;
 
   const icons = iconsData.map((icon) => (
     // <div></div>
