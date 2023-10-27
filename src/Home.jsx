@@ -3,6 +3,7 @@ import { iconsData } from "./data";
 import arrowLeftLine from "./assets/arrow-left-line.png";
 import arrowRightLine from "./assets/arrow-right-line.png";
 import arrowRightCircleFill from "./assets/arrow-right-circle-fill.png";
+import arrowLeftCircleFill from "./assets/arrow-left-circle-fill.png";
 
 import React from "react";
 
@@ -11,9 +12,9 @@ function Home() {
 
   const arrowToggle = () => {
     setTimeout(() => {
-      if (arrowRightLine) setIsOpen(arrowRightLine);
+      if (arrowLeftLine) setIsOpen(arrowLeftLine);
     }, 300);
-    setIsOpen(arrowRightCircleFill);
+    setIsOpen(arrowLeftCircleFill);
   };
 
   const icons = iconsData.map((icon) => (
