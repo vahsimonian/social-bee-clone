@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { iconsData } from "./data";
 import arrowLeftLine from "./assets/arrow-left-line.png";
-import arrowRight from "./assets/arrow-right-line.png";
+import arrowRightLine from "./assets/arrow-right-line.png";
 import arrowRightCircleFill from "./assets/arrow-right-circle-fill.png";
 
 import React from "react";
@@ -11,7 +11,7 @@ function Home() {
 
   const arrowToggle = () => {
     setTimeout(() => {
-      if (arrowRight) setIsOpen(arrowRight);
+      if (arrowRightLine) setIsOpen(arrowRightLine);
     }, 300);
     setIsOpen(arrowRightCircleFill);
   };
