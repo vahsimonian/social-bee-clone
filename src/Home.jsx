@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { iconsData } from "./data";
-import arrowDown from "./assets/arrow-down-line.png";
+import arrowLeftLine from "./assets/arrow-left-line.png";
 import arrowRight from "./assets/arrow-right-line.png";
 import arrowCircleFill from "./assets/arrow-right-circle-fill.png";
 
 import React from "react";
 
 function Home() {
-  const [isOpen, setIsOpen] = useState(arrowDown);
+  const [isOpen, setIsOpen] = useState(arrowLeftLine);
 
   const arrowToggle = () => {
     setTimeout(() => {
