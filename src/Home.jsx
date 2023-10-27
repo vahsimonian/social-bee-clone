@@ -8,14 +8,14 @@ import arrowLeftCircleFill from "./assets/arrow-left-circle-fill.png";
 import React from "react";
 
 function Home() {
-  const [isOpen, setIsOpen] = useState(arrowLeftLine);
+  const [arrow, setArrow] = useState(arrowLeftLine);
 
   const arrowToggle = () => {
     setTimeout(() => {
-      if (arrowLeftLine) setIsOpen(arrowRightLine);
-      if (arrowRightLine) setIsOpen(arrowRightLine);
+      if (arrowLeftLine) setArrow(arrowRightLine);
+      if (arrowRightLine) setArrow(arrowRightLine);
     }, 300);
-    setIsOpen(arrowRightCircleFill);
+    setArrow(arrowRightCircleFill);
   };
 
   const icons = iconsData.map((icon) => (
@@ -33,7 +33,7 @@ function Home() {
       <div className="prompt">
         <span>Prompt templates</span>
         <img
-          src={isOpen}
+          src={arrow}
           alt="arrow-down"
           className="arrow-down"
           onClick={arrowToggle}
