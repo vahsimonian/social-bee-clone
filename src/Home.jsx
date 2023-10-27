@@ -12,9 +12,10 @@ function Home() {
 
   const arrowToggle = () => {
     setTimeout(() => {
-      if (arrowLeftLine) setIsOpen(arrowLeftLine);
+      if (arrowLeftLine) setIsOpen(arrowRightLine);
+      if (arrowRightLine) setIsOpen(arrowRightLine);
     }, 300);
-    setIsOpen(arrowLeftCircleFill);
+    setIsOpen(arrowRightCircleFill);
   };
 
   const icons = iconsData.map((icon) => (
