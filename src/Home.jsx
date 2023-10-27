@@ -2,7 +2,7 @@ import { useState } from "react";
 import { iconsData } from "./data";
 import arrowLeftLine from "./assets/arrow-left-line.png";
 import arrowRight from "./assets/arrow-right-line.png";
-import arrowCircleFill from "./assets/arrow-right-circle-fill.png";
+import arrowRightCircleFill from "./assets/arrow-right-circle-fill.png";
 
 import React from "react";
 
@@ -11,9 +11,9 @@ function Home() {
 
   const arrowToggle = () => {
     setTimeout(() => {
-      setIsOpen(arrowRight);
+      if (arrowRight) setIsOpen(arrowRight);
     }, 300);
-    setIsOpen(arrowCircleFill);
+    setIsOpen(arrowRightCircleFill);
   };
 
   const icons = iconsData.map((icon) => (
