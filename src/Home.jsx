@@ -23,6 +23,7 @@ function Home() {
         <img src={icon.icon} alt="icons" className="icon-img" />
         <span>{icon.name}</span>
       </div>
+      <div></div>
     </button>
   ));
 
