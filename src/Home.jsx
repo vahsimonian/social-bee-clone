@@ -8,13 +8,13 @@ import arrowLeftCircleFill from "./assets/arrow-left-circle-fill.png";
 import React from "react";
 
 function Home() {
-  const [arrow, setArrow] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [clickCount, setClickCount] = useState(0);
 
   const handleClick = () => {
     setTimeout(() => {
-      if (arrowLeftLine) setArrow(arrowRightLine);
-      if (arrowRightLine) setArrow(arrowRightLine);
+      if (arrowLeftLine) setIsOpen(arrowRightLine);
+      if (arrowRightLine) setIsOpen(arrowRightLine);
     }, 300);
     if (clickCount === 1) console.log("1");
     setClickCount(clickCount + 1);
