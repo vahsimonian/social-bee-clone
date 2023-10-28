@@ -35,7 +35,7 @@ function Home() {
 
   const icons = iconsData.map((icon) => (
     // <div></div>
-    <button className={`icon ${openNavbar}`} onClick={arrowToggle}>
+    <button className="icon" onClick={arrowToggle}>
       <div className="icon-name-container">
         <img src={icon.icon} alt="icons" className="icon-img" />
         <span>{icon.name}</span>
@@ -44,7 +44,7 @@ function Home() {
   ));
 
   return (
-    <div className="icon-container">
+    <div className={`icon-container ${openNavbar}`}>
       <div className="prompt">
         <span>Prompt templates</span>
         <img
