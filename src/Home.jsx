@@ -14,6 +14,7 @@ function Home() {
   const openNavbar = isOpen ? "open-navbar" : "";
 
   const arrowToggle = () => {
+    setIsOpen(isOpen);
     setArrow(arrowLeftCircleFill);
     setTimeout(() => {
       setArrow(arrowLeftLine);
@@ -22,7 +23,7 @@ function Home() {
 
   const openArrow = () => {
     setArrow(arrowRightCircleFill);
-    setIsOpen(isOpen);
+    setIsOpen(!isOpen);
     setTimeout(() => {
       if (isOpen) {
         setArrow(arrowLeftLine);
