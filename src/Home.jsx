@@ -22,8 +22,8 @@ function Home() {
 
   const openArrow = () => {
     setArrow(arrowRightCircleFill);
+    setIsOpen(false);
     setTimeout(() => {
-      setIsOpen(false);
       if (isOpen) {
         setArrow(arrowLeftLine);
       }
