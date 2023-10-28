@@ -14,6 +14,10 @@ function Home() {
   const handleClick = () => {
     if (clickCount === 1) console.log("1");
     setClickCount(clickCount + 1);
+    setTimeout(() => {
+      if (arrowLeftLine) setArrow(arrowRightLine);
+      if (arrowRightLine) setArrow(arrowRightLine);
+    }, 300);
   };
 
   useEffect(() => {
@@ -23,17 +27,9 @@ function Home() {
     return () => clearTimeout(timer);
   }, [clickCount]);
 
-  const arrowToggle = () => {
-    setTimeout(() => {
-      if (arrowLeftLine) setArrow(arrowRightLine);
-      if (arrowRightLine) setArrow(arrowRightLine);
-    }, 300);
-    setArrow(arrowRightCircleFill);
-  };
-
   const icons = iconsData.map((icon) => (
     // <div></div>
-    <button className="icon" onClick={arrowToggle}>
+    <button className="icon" onClick={handleClick}>
       <div className="icon-name-container">
         <img src={icon.icon} alt="icons" className="icon-img" />
         <span>{icon.name}</span>
@@ -49,7 +45,7 @@ function Home() {
           src={arrowLeftLine}
           alt="arrow-down"
           className="arrow-down"
-          onClick={arrowToggle}
+          onClick={handleClick}
         />
       </div>
       <div className="icon-top">{icons}</div>
