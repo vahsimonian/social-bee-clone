@@ -12,12 +12,12 @@ function Home() {
   const [clickCount, setClickCount] = useState(0);
 
   const handleClick = () => {
-    if (clickCount === 1) console.log("1");
-    setClickCount(clickCount + 1);
     setTimeout(() => {
       if (arrowLeftLine) setArrow(arrowRightLine);
       if (arrowRightLine) setArrow(arrowRightLine);
     }, 300);
+    if (clickCount === 1) console.log("1");
+    setClickCount(clickCount + 1);
   };
 
   useEffect(() => {
