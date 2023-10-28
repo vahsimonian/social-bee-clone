@@ -8,25 +8,27 @@ import arrowLeftCircleFill from "./assets/arrow-left-circle-fill.png";
 import React from "react";
 
 function Home() {
-  const [arrow, setArrow] = useState(arrowLeftLine);
+  const [arrow, setArrow] = useState(arrowRightLine);
   const [isOpen, setIsOpen] = useState(false);
 
   const arrowToggle = () => {
-    setArrow(arrowRightCircleFill);
+    setArrow(arrowLeftCircleFill);
     setTimeout(() => {
-      if (arrowLeftLine) setArrow(arrowRightLine);
-      if (arrowRightLine) setArrow(arrowRightLine);
+      setArrow(arrowLeftLine);
     }, 300);
   };
 
   const openArrow = () => {
-    setIsOpen(false);
-    if (!isOpen) {
-      setArrow(arrowLeftLine);
-    }
-    if (isOpen) {
-      setArrow(arrowRightLine);
-    }
+    setArrow(arrowRightCircleFill);
+    setTimeout(() => {
+      setIsOpen(false);
+      if (isOpen) {
+        setArrow(arrowLeftLine);
+      }
+      if (!isOpen) {
+        setArrow(arrowRightLine);
+      }
+    }, 300);
   };
 
   const icons = iconsData.map((icon) => (
