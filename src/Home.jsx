@@ -11,7 +11,7 @@ function Home() {
   const [arrow, setArrow] = useState(arrowRightLine);
   const [isOpen, setIsOpen] = useState(false);
 
-  const openNavbar = isOpen ? "open-navnar" : "";
+  const openNavbar = isOpen ? "open-navbar" : "";
 
   const arrowToggle = () => {
     setArrow(arrowLeftCircleFill);
@@ -35,7 +35,7 @@ function Home() {
 
   const icons = iconsData.map((icon) => (
     // <div></div>
-    <button className="icon" onClick={arrowToggle}>
+    <button className={`icon ${openNavbar}`} onClick={arrowToggle}>
       <div className="icon-name-container">
         <img src={icon.icon} alt="icons" className="icon-img" />
         <span>{icon.name}</span>
