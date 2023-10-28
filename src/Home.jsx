@@ -13,6 +13,9 @@ function Home() {
 
   const handleClick = () => {
     setClickCount(clickCount + 1);
+    setIsOpen(!isOpen);
+    if (isOpen) setClickCount(clickCount - 1);
+    if (!isOpen) setClickCount(clickCount + 1);
     if (clickCount === 1) return arrowRightLine;
     if (clickCount === 0) return arrowLeftLine;
   };
