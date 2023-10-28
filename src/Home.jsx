@@ -12,9 +12,9 @@ function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
   const arrowToggle = () => {
-    setArrow(arrowLeftCircleFill);
+    setArrow(arrowRightCircleFill);
     setTimeout(() => {
-      if (arrowRightLine) setArrow(arrowLeftLine);
+      if (arrowLeftLine) setArrow(arrowRightLine);
       if (arrowRightLine) setArrow(arrowRightLine);
     }, 300);
   };
@@ -22,10 +22,10 @@ function Home() {
   const openArrow = () => {
     setIsOpen(false);
     if (!isOpen) {
-      setArrow(arrowRightLine);
+      setArrow(arrowLeftLine);
     }
     if (isOpen) {
-      setArrow(arrowLeftLine);
+      setArrow(arrowRightLine);
     }
   };
 
