@@ -13,7 +13,6 @@ function Home() {
 
   const handleClick = () => {
     setTimeout(() => {
-      if (isOpen) setIsOpen(arrowRightLine);
       if (arrowRightLine) setIsOpen(arrowRightLine);
     }, 300);
     if (clickCount === 1) console.log("1");
