@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { iconsData } from "./data";
 import arrowLeftLine from "./assets/arrow-left-line.png";
 import arrowRightLine from "./assets/arrow-right-line.png";
@@ -11,7 +11,17 @@ function Home() {
   const [arrow, setArrow] = useState(arrowLeftLine);
   const [clickCount, setClickCount] = useState(0);
 
-  const handleClick = () => {};
+  const handleClick = () => {
+    if (clickCount === 1) console.log("1");
+    setClickCount(clickCount + 1);
+  };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setClickCount(0);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, [clickCount]);
 
   const arrowToggle = () => {
     setTimeout(() => {
