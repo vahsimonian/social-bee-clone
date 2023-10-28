@@ -9,15 +9,14 @@ import React from "react";
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
-  const [clickCount, setClickCount] = useState(0);
 
   const handleClick = () => {
-    setClickCount(clickCount + 1);
     setIsOpen(!isOpen);
-    if (isOpen) setClickCount(clickCount - 1);
-    if (!isOpen) setClickCount(clickCount + 1);
-    if (clickCount === 1) return arrowRightLine;
-    if (clickCount === 0) return arrowLeftLine;
+    if (isOpen) {
+      return arrowRightLine;
+    } else {
+      return arrowLeftLine;
+    }
   };
 
   const icons = iconsData.map((icon) => (
