@@ -8,16 +8,13 @@ import arrowLeftCircleFill from "./assets/arrow-left-circle-fill.png";
 import React from "react";
 
 function Home() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(arrowLeftLine);
 
   const handleClick = () => {
-    setIsOpen(!isOpen);
-    if (isOpen) {
-      return arrowRightLine;
-    } else {
-      return arrowLeftLine;
-    }
+    if (arrowLeftLine) return arrowRightLine;
+    if (arrowRightLine) return arrowLeftLine;
   };
+  console.log(isOpen);
 
   const icons = iconsData.map((icon) => (
     // <div></div>
