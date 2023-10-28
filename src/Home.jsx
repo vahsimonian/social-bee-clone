@@ -22,7 +22,7 @@ function Home() {
 
   const openArrow = () => {
     setArrow(arrowRightCircleFill);
-    setIsOpen(!isOpen);
+    setIsOpen(isOpen);
     setTimeout(() => {
       if (isOpen) {
         setArrow(arrowLeftLine);
