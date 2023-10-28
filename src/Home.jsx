@@ -8,7 +8,7 @@ import arrowLeftCircleFill from "./assets/arrow-left-circle-fill.png";
 import React from "react";
 
 function Home() {
-  const [arrow, setArrow] = useState(arrowLeftLine);
+  const [arrow, setArrow] = useState(false);
   const [clickCount, setClickCount] = useState(0);
 
   const handleClick = () => {
@@ -46,7 +46,7 @@ function Home() {
       <div className="prompt">
         <span>Prompt templates</span>
         <img
-          src={arrow}
+          src={arrowLeftLine}
           alt="arrow-down"
           className="arrow-down"
           onClick={arrowToggle}
