@@ -9,6 +9,9 @@ import React from "react";
 
 function Home() {
   const [arrow, setArrow] = useState(arrowLeftLine);
+  const [clickCount, setClickCount] = useState(0);
+
+  const handleClick = () => {};
 
   const arrowToggle = () => {
     setTimeout(() => {
