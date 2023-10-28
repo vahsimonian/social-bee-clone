@@ -11,6 +11,8 @@ function Home() {
   const [arrow, setArrow] = useState(arrowRightLine);
   const [isOpen, setIsOpen] = useState(false);
 
+  const openNavbar = isOpen ? "open-navnar" : "";
+
   const arrowToggle = () => {
     setArrow(arrowLeftCircleFill);
     setTimeout(() => {
