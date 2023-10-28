@@ -12,11 +12,21 @@ function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
   const arrowToggle = () => {
+    setIsOpen(true);
+    setArrow(arrowRightCircleFill);
     setTimeout(() => {
       if (arrowLeftLine) setArrow(arrowRightLine);
       if (arrowRightLine) setArrow(arrowRightLine);
     }, 300);
-    setArrow(arrowRightCircleFill);
+  };
+
+  const openArrow = () => {
+    setIsOpen(false);
+    if (!isOpen) {
+      setArrow(arrowLeftLine);
+    } else {
+      setArrow(arrowRightLine);
+    }
   };
 
   const icons = iconsData.map((icon) => (
@@ -37,7 +47,7 @@ function Home() {
           src={arrow}
           alt="arrow-down"
           className="arrow-down"
-          onClick={arrowToggle}
+          onClick={openArrow}
         />
       </div>
       <div className="icon-top">{icons}</div>
