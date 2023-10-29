@@ -136,7 +136,7 @@ body {
 }
 
 .open-navbar {
-  display: block;
+  display: none;
   margin-top: 40px;
   width: 840px;
   height: 800px;
