@@ -25,12 +25,12 @@ function Home() {
     setArrow(arrowRightCircleFill);
     setIsOpen(false);
     setTimeout(() => {
-      if (isOpen) {
-        setArrow(arrowLeftLine);
-      }
-      if (!isOpen) {
-        setArrow(arrowRightLine);
-      }
+      // if (isOpen) {
+      isOpen ? setArrow(arrowLeftLine) : setArrow(arrowRightLine);
+      // }
+      // if (!isOpen) {
+      //   setArrow(arrowRightLine);
+      // }
     }, 300);
   };
 
