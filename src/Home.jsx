@@ -41,7 +41,7 @@ function Home() {
 
   return (
     <div>
-      <div className={`icon-container ${openNavbar}`}>
+      <div className="icon-container">
         <div className="prompt">
           <span>Prompt templates</span>
           <img
@@ -53,7 +53,7 @@ function Home() {
         </div>
         <div className="icon-top">{icons}</div>
       </div>
-      <div className="icon-container"></div>
+      <div className="open-navbar"></div>
     </div>
   );
 }
