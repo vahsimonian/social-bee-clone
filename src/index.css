@@ -136,13 +136,5 @@ body {
 }
 
 .open-navbar {
-  display: none;
-  margin-top: 40px;
-  width: 840px;
-  height: 800px;
-  margin-left: 65px;
-  background-color: #fff;
-  border-radius: 10px;
   display: flex;
-  flex-direction: column;
 }

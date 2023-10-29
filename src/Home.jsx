@@ -53,7 +53,7 @@ function Home() {
         </div>
         <div className="icon-top">{icons}</div>
       </div>
-      <div className="open-navbar"></div>
+      <div className="icon-navbar"></div>
     </div>
   );
 }
