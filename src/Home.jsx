@@ -40,7 +40,7 @@ function Home() {
   ));
 
   return (
-    <div>
+    <div className="open-navbar">
       <div className="icon-container">
         <div className="prompt">
           <span>Prompt templates</span>
@@ -53,7 +53,7 @@ function Home() {
         </div>
         <div className="icon-top">{icons}</div>
       </div>
-      <div className="open-navbar"></div>
+      <div className="open-navbasr"></div>
     </div>
   );
 }
