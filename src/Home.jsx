@@ -40,17 +40,20 @@ function Home() {
   ));
 
   return (
-    <div className={`icon-container ${openNavbar}`}>
-      <div className="prompt">
-        <span>Prompt templates</span>
-        <img
-          src={arrow}
-          alt="arrow-down"
-          className="arrow-down"
-          onClick={openArrow}
-        />
+    <div>
+      <div className={`icon-container ${openNavbar}`}>
+        <div className="prompt">
+          <span>Prompt templates</span>
+          <img
+            src={arrow}
+            alt="arrow-down"
+            className="arrow-down"
+            onClick={openArrow}
+          />
+        </div>
+        <div className="icon-top">{icons}</div>
       </div>
-      <div className="icon-top">{icons}</div>
+      <div className="icon-container"></div>
     </div>
   );
 }
