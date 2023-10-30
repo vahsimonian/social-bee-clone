@@ -138,3 +138,15 @@ body {
 .open-navbar {
   display: flex;
 }
+
+.icon-navbar {
+  margin-top: 40px;
+  width: 420px;
+  height: 800px;
+  margin-left: 65px;
+  background-color: red;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  /* display: none; */
+}
