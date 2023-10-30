@@ -77,7 +77,7 @@ body {
   height: 900px;
   margin-left: 65px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 10px 0 0 10px;
   display: flex;
   flex-direction: column;
 }
@@ -145,11 +145,13 @@ body {
   margin-top: 40px;
   width: 420px;
   height: 900px;
-  margin-left: 65px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
   display: flex;
   flex-direction: column;
+}
+
+.icon-container::after {
 }
 
 .icon-navbar-none {
