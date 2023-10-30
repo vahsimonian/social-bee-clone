@@ -74,7 +74,7 @@ body {
 .icon-container {
   margin-top: 40px;
   width: 420px;
-  height: 800px;
+  height: 900px;
   margin-left: 65px;
   background-color: #fff;
   border-radius: 10px;
@@ -137,12 +137,14 @@ body {
 
 .open-navbar {
   display: flex;
+  /* background-color: white; */
+  height: 100vh;
 }
 
 .icon-navbar {
   margin-top: 40px;
   width: 420px;
-  height: 800px;
+  height: 900px;
   margin-left: 65px;
   background-color: white;
   border-radius: 10px;
