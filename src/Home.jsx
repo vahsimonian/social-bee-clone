@@ -39,7 +39,7 @@ function Home() {
     </button>
   ));
 
-  const iconNavbarOpen = isOpen ? "icon-navbar-none" : "icon-navbar ";
+  const iconNavbarOpen = !isOpen ? "icon-navbar-none" : "icon-navbar ";
 
   return (
     <div className="open-navbar">
@@ -55,7 +55,7 @@ function Home() {
         </div>
         <div className="icon-top">{icons}</div>
       </div>
-      <div className=""></div>
+      <div className={iconNavbarOpen}></div>
     </div>
   );
 }
