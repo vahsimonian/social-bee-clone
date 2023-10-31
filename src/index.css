@@ -157,3 +157,8 @@ body {
 .icon-navbar-none {
   display: none;
 }
+
+.prompts {
+  display: flex;
+  flex-direction: column;
+}

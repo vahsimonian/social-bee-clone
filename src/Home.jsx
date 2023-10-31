@@ -61,11 +61,11 @@ function Home() {
       <div className={iconNavbarOpen}>
         <div className="prompts">
           <span>Your prompt</span>
-          <img src={informationFill} alt="" />
+          <img src={informationFill} alt="" width={22} />
         </div>
         <div>
-          <img src={heartIcon} alt="" />
-          <img src={shuffleIcon} alt="" />
+          <img src={heartIcon} alt="" width={22} />
+          <img src={shuffleIcon} alt="" width={22} />
         </div>
       </div>
     </div>
