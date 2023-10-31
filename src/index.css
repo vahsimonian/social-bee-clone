@@ -160,5 +160,6 @@ body {
 
 .prompts {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  place-items: center;
 }
