@@ -119,8 +119,10 @@ body {
   margin-top: 25px;
 }
 .prompt {
-  margin-top: 25px;
-  margin-left: 25px;
+  /* margin-top: 25px; */
+  /* margin-left: 25px; */
+  /* margin-right: 5px; */
+  margin: 25px 5px 0 25px;
   display: flex;
   justify-content: space-between;
 }
