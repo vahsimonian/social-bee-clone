@@ -4,12 +4,13 @@ import arrowLeftLine from "./assets/arrow-left-line.png";
 import arrowRightLine from "./assets/arrow-right-line.png";
 import arrowRightCircleFill from "./assets/arrow-right-circle-fill.png";
 import arrowLeftCircleFill from "./assets/arrow-left-circle-fill.png";
+import informationFill from "./assets/information-fill.png";
 
 import React from "react";
 
 function Home() {
   const [arrow, setArrow] = useState(arrowRightLine);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(!false);
 
   const openNavbar = isOpen ? "open-navbar" : "";
 
@@ -55,7 +56,12 @@ function Home() {
         </div>
         <div className="icon-top">{icons}</div>
       </div>
-      <div className={iconNavbarOpen}></div>
+      <div className={iconNavbarOpen}>
+        <div>
+          <span>Your prompt</span>
+          <img src="" alt="" />
+        </div>
+      </div>
     </div>
   );
 }
