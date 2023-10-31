@@ -6,6 +6,7 @@ import arrowRightCircleFill from "./assets/arrow-right-circle-fill.png";
 import arrowLeftCircleFill from "./assets/arrow-left-circle-fill.png";
 import informationFill from "./assets/information-fill.png";
 import heartIcon from "./assets/heart-line.png";
+import shuffleIcon from "./assets/shuffle-line.png";
 
 import React from "react";
 
@@ -58,12 +59,13 @@ function Home() {
         <div className="icon-top">{icons}</div>
       </div>
       <div className={iconNavbarOpen}>
-        <div>
+        <div className="prompts">
           <span>Your prompt</span>
           <img src={informationFill} alt="" />
         </div>
         <div>
           <img src={heartIcon} alt="" />
+          <img src={shuffleIcon} alt="" />
         </div>
       </div>
     </div>
