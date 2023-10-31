@@ -62,7 +62,12 @@ function Home() {
         <div className="your-prompts">
           <div>
             <span>Your prompt</span>
-            <img src={informationFill} alt="" width={22} />
+            <img
+              src={informationFill}
+              alt="info"
+              className="info-icon"
+              width={22}
+            />
           </div>
           <div>
             <img src={heartIcon} alt="" width={22} />
