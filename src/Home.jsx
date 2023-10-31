@@ -5,6 +5,7 @@ import arrowRightLine from "./assets/arrow-right-line.png";
 import arrowRightCircleFill from "./assets/arrow-right-circle-fill.png";
 import arrowLeftCircleFill from "./assets/arrow-left-circle-fill.png";
 import informationFill from "./assets/information-fill.png";
+import heartIcon from "./assets/heart-line.png";
 
 import React from "react";
 
@@ -59,7 +60,10 @@ function Home() {
       <div className={iconNavbarOpen}>
         <div>
           <span>Your prompt</span>
-          <img src="" alt="" />
+          <img src={informationFill} alt="" />
+        </div>
+        <div>
+          <img src={heartIcon} alt="" />
         </div>
       </div>
     </div>
