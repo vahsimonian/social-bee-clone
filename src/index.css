@@ -158,7 +158,8 @@ body {
   display: none;
 }
 
-.prompts {
+.your-prompts {
+  margin-top: 25px;
   display: flex;
   justify-content: space-between;
   place-items: center;
