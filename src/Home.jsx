@@ -61,7 +61,7 @@ function Home() {
       <div className={iconNavbarOpen}>
         <div className="your-prompts">
           <div>
-            <span>Your prompt</span>
+            <span className="span-your-prompt">Your prompt</span>
             <img
               src={informationFill}
               alt="info"
