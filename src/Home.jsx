@@ -12,7 +12,7 @@ import React from "react";
 
 function Home() {
   const [arrow, setArrow] = useState(arrowRightLine);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(!false);
 
   const openNavbar = isOpen ? "open-navbar" : "";
 
@@ -60,8 +60,8 @@ function Home() {
       </div>
       <div className={iconNavbarOpen}>
         <div className="your-prompts">
-          <div>
-            <span className="span-your-prompt">Your prompt</span>
+          <div className="prompts-span-icon">
+            <span>Your prompt</span>
 
             <img
               src={informationFill}
