@@ -70,7 +70,7 @@ function Home() {
               width={22}
             />
           </div>
-          <div>
+          <div className="your-prompts-icons">
             <img src={heartIcon} alt="" width={22} />
             <img src={shuffleIcon} alt="" width={22} />
           </div>

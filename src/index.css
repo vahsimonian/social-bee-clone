@@ -168,6 +168,10 @@ body {
 
 .prompts-span-icon {
   display: flex;
-
   align-items: center;
+  /* margin-left: 5px; */
+}
+
+.your-prompts-icons {
+  margin-right: 25px;
 }
