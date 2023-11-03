@@ -12,7 +12,7 @@ import React from "react";
 
 function Home() {
   const [arrow, setArrow] = useState(arrowRightLine);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(!false);
 
   const arrowToggle = () => {
     setIsOpen(true);
