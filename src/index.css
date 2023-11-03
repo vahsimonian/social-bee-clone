@@ -137,6 +137,7 @@ body {
   border-radius: 0 10px 10px 0;
   display: flex;
   flex-direction: column;
+  border-left: 5px solid lightgray;
 }
 
 .icon-container {
@@ -148,7 +149,6 @@ body {
   border-radius: 10px 0 0 10px;
   display: flex;
   flex-direction: column;
-  border-right: 10px solid lightgray;
 }
 
 /* .icon-container::before {
