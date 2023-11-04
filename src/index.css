@@ -194,5 +194,7 @@ body {
 .your-prompt-input {
   margin-inline: 25px;
   margin-top: 35px;
-  padding: 25px 50px;
+  padding: 50px 50px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
 }
