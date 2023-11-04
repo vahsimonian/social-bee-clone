@@ -170,3 +170,22 @@ body {
 .your-prompts-icons {
   margin-right: 25px;
 }
+
+.border-container {
+  position: relative;
+  padding-left: 10px; /* Optional: Add some padding to the content to prevent it from being overlapped by the border */
+  height: 100px; /* Set the desired height for the container */
+
+  /* Rest of your styles */
+}
+
+.border-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 30%; /* Adjust the top position to control the height of the border */
+  width: 5px; /* Adjust the width of the border */
+  height: 40%; /* Adjust the height of the border */
+  background-color: #000; /* Adjust the border color */
+  border-radius: 0 10px 10px 0; /* Adjust the border radius as needed */
+}

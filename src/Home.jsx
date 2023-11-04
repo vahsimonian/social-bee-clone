@@ -58,6 +58,7 @@ function Home() {
       </div>
       <div className={iconNavbarOpen}>
         <div className="your-prompts">
+          {/* <div></div> */}
           <div className="prompts-span-icon">
             <span>Your prompt</span>
             <img
