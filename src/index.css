@@ -204,3 +204,11 @@ body {
   border-radius: 5px;
   border: 1px solid lightgray;
 }
+.your-prompt-ai-button-container {
+  display: row;
+}
+
+.your-prompt-ai-button {
+  margin-left: 5px;
+  margin-top: 5px;
+}

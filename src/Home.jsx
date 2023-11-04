@@ -76,6 +76,15 @@ function Home() {
         <div className="your-prompt-ai-container">
           <input type="text" className="your-prompt-input" />
           <p>Tone of voice</p>
+          <div className="your-prompt-ai-button-container">
+            <button className="your-prompt-ai-button">some button</button>
+            <button className="your-prompt-ai-button">some button</button>
+            <button className="your-prompt-ai-button">some button</button>
+            <button className="your-prompt-ai-button">some button</button>
+            <button className="your-prompt-ai-button">some button</button>
+            <button className="your-prompt-ai-button">some button</button>
+            <button className="your-prompt-ai-button">some button</button>
+          </div>
         </div>
       </div>
       <div className={iconNavbarOpen}>
