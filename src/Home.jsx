@@ -85,8 +85,20 @@ function Home() {
           <ul>
             <li>
               <p>
-                Pick a prompt from the left-hand side "Prompt templates" panel,
-                use write one from the scratch
+                Pick a prompt from the left-hand side "Prompt templates"
+                panel,use the shuffle button to get a random prompt, or write
+                one form scratch
+              </p>
+            </li>
+            <li>
+              <p>
+                Write or edit your prompt with what want the AI to generate and
+                hit the Generate Button.
+              </p>
+            </li>
+            <li>
+              <p>
+                Select the results you like and hit the Share on social button.
               </p>
             </li>
           </ul>
