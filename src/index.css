@@ -191,9 +191,15 @@ body {
   font-size: 24px;
 }
 
-.your-prompt-input {
+.your-prompt-ai-container {
+  display: flex;
+  flex-direction: column;
   margin-inline: 25px;
   margin-top: 35px;
+}
+
+.your-prompt-input {
+  /* margin-inline: 25px; */
   padding: 50px 50px;
   border-radius: 5px;
   border: 1px solid lightgray;
