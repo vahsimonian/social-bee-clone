@@ -80,7 +80,16 @@ function Home() {
           <div className="prompts-span-icon">
             <span className="get-started">Get started</span>
           </div>
-          <div className="your-prompts-icons"></div>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <p>
+                Pick a prompt from the left-hand side "Prompt templates" panel,
+                use write one from the scratch
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
