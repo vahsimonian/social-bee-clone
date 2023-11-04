@@ -73,6 +73,7 @@ function Home() {
             <img src={shuffleIcon} alt="" width={22} />
           </div>
         </div>
+        <input type="text" className="your-prompt-input" />
       </div>
       <div className={iconNavbarOpen}>
         <div className="your-prompts border-container">
