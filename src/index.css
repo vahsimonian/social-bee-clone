@@ -211,4 +211,8 @@ body {
 .your-prompt-ai-button {
   margin-left: 5px;
   margin-top: 5px;
+  padding: 5px 15px;
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-radius: 5px;
 }
