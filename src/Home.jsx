@@ -85,6 +85,10 @@ function Home() {
             <button className="your-prompt-ai-button">Funny</button>
             <button className="your-prompt-ai-button">More</button>
           </div>
+          <div>
+            <span>Approximate words</span>
+            <input type="text" />
+          </div>
         </div>
       </div>
       <div className={iconNavbarOpen}>
