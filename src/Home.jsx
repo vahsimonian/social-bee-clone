@@ -77,13 +77,13 @@ function Home() {
           <input type="text" className="your-prompt-input" />
           <p>Tone of voice</p>
           <div className="your-prompt-ai-button-container">
-            <button className="your-prompt-ai-button">some button</button>
-            <button className="your-prompt-ai-button">some button</button>
-            <button className="your-prompt-ai-button">some button</button>
-            <button className="your-prompt-ai-button">some button</button>
-            <button className="your-prompt-ai-button">some button</button>
-            <button className="your-prompt-ai-button">some button</button>
-            <button className="your-prompt-ai-button">some button</button>
+            <button className="your-prompt-ai-button">Polite</button>
+            <button className="your-prompt-ai-button">Witty</button>
+            <button className="your-prompt-ai-button">Enthusiastic</button>
+            <button className="your-prompt-ai-button">Friendly</button>
+            <button className="your-prompt-ai-button">Informational</button>
+            <button className="your-prompt-ai-button">Funny</button>
+            <button className="your-prompt-ai-button">More</button>
           </div>
         </div>
       </div>
