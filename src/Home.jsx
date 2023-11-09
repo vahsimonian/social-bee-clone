@@ -87,7 +87,7 @@ function Home() {
           </div>
           <div>
             <span>Approximate words</span>
-            <input type="text" className="approximate-words" />
+            <input type="number" className="approximate-words" />
           </div>
         </div>
       </div>
