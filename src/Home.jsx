@@ -15,13 +15,16 @@ function Home() {
   const [isOpen, setIsOpen] = useState(!false);
   const [volume, setVolume] = useState(50); // Initial volume level (0 to 100)
   const [selectedValue, setSelectedValue] = useState("");
-  const [checkedItems, setCheckedItems] = useState([
-    false,
-    false,
-    false,
-    false,
-    false,
-  ]);
+  const [toggleIsTrue, setToggleIsTrue] = useState(false);
+  const [sliderValue, setSliderValue] = useState(50); // Initial slider value
+
+  const handleSliderChange = (e) => {
+    setSliderValue(e.target.value);
+  };
+
+  const toggleButton = () => {
+    setToggleIsTrue(!toggleIsTrue);
+  };
 
   // Handler function for the onChange event
   const handleSelectChange = (event) => {
@@ -62,12 +65,6 @@ function Home() {
   ));
 
   const iconNavbarOpen = !isOpen ? "icon-navbar-none" : "icon-navbar ";
-
-  const handleCheckboxChange = (index) => {
-    const newCheckedItems = [...checkedItems];
-    newCheckedItems[index] = !newCheckedItems[index];
-    setCheckedItems(newCheckedItems);
-  };
 
   return (
     <div className="open-navbar">
@@ -118,37 +115,60 @@ function Home() {
               <option>More</option>
             </select>
           </div>
-          <div>
+          <div className="approx-words-container">
             <span>Approximate words</span>
-            <input type="number" className="approximate-words" />
+            <div className="slider-value">
+              <div className="approximate-words">{sliderValue}</div>
+            </div>
+            {/* <input
+              type="number"
+              className="approximate-words"
+              value={sliderValue}
+            /> */}
           </div>
-          <input
+          {/* <input
             type="range"
             min="0"
             max="100"
             value={volume}
             onChange={handleChangeVolume}
             className="range"
-          />
+          /> */}
+          <div className="volume-slider-container">
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value={sliderValue}
+              onChange={handleSliderChange}
+              className="slider"
+            />
+            {/* <div className="slider-value">{sliderValue}</div> */}
+          </div>
         </div>
-
-        {/* CHECKBOX */}
-
-        <div className="circle-checkbox-line">
-          {checkedItems.map((checked, index) => (
-            <div
-              key={index}
-              className={`checkbox ${checked ? "checked" : ""}`}
-              onClick={() => handleCheckboxChange(index)}
-            >
-              {index + 1}
-            </div>
-          ))}
+        <div className="generate-hashtags">
+          Generate hashtags
+          <div className="toggle-btn-bg">
+            <button
+              className={`dark-mode-toggle ${toggleIsTrue ? "dark" : ""}`}
+              onClick={toggleButton}
+            ></button>
+          </div>
         </div>
-
-        {/* CHECKBOX */}
-
-        <input type="checkbox" name="subscribe" />
+        <div className="generate-hashtags">
+          Inlcude Emoji
+          <div className="toggle-btn-bg">
+            <button
+              className={`dark-mode-toggle ${toggleIsTrue ? "dark" : ""}`}
+              onClick={toggleButton}
+            ></button>
+          </div>
+        </div>
+        <div className="posts-generate-container">
+          <span>Posts to generate</span>
+          <input type="number" className="posts-generate" />
+        </div>
+        <button className="generate-btn">Generate</button>
       </div>
       <div className={iconNavbarOpen}>
         <div className="your-prompts border-container">
