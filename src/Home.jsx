@@ -26,17 +26,14 @@ function Home() {
     setToggleIsTrue(!toggleIsTrue);
   };
 
-  // Handler function for the onChange event
   const handleSelectChange = (event) => {
     setSelectedValue(event.target.value);
   };
 
-  const handleChangeVolume = (e) => {
-    const newVolume = e.target.value;
-    setVolume(newVolume);
-    // Update audio element or use Web Audio API to adjust volume
-    // For example: audioElement.volume = newVolume / 100
-  };
+  // const handleChangeVolume = (e) => {
+  //   const newVolume = e.target.value;
+  //   setVolume(newVolume);
+  // };
 
   const arrowToggle = () => {
     setIsOpen(true);
@@ -55,7 +52,6 @@ function Home() {
   };
 
   const icons = iconsData.map((icon) => (
-    // <div></div>
     <button className="icon" onClick={arrowToggle}>
       <div className="icon-name-container">
         <img src={icon.icon} alt="icons" className="icon-img" />
@@ -88,13 +84,14 @@ function Home() {
             <img
               src={informationFill}
               alt="info"
-              className="info-icon"
+              className="info-icon icon-cursor
+              icon-cursor"
               width={22}
             />
           </div>
           <div className="your-prompts-icons">
-            <img src={heartIcon} alt="" width={22} />
-            <img src={shuffleIcon} alt="" width={22} />
+            <img src={heartIcon} alt="" width={22} className="icon-cursor" />
+            <img src={shuffleIcon} alt="" width={22} className="icon-cursor" />
           </div>
         </div>
         <div className="your-prompt-ai-container">
@@ -108,11 +105,13 @@ function Home() {
             <button className="your-prompt-ai-button">Informational</button>
             <button className="your-prompt-ai-button">Funny</button>
             <select
-              className="your-prompt-ai-button"
+              className="more-option"
               value={selectedValue}
               onChange={handleSelectChange}
             >
-              <option>More</option>
+              <option>
+                <span>More</span>
+              </option>
             </select>
           </div>
           <div className="approx-words-container">
@@ -120,20 +119,7 @@ function Home() {
             <div className="slider-value">
               <div className="approximate-words">{sliderValue}</div>
             </div>
-            {/* <input
-              type="number"
-              className="approximate-words"
-              value={sliderValue}
-            /> */}
           </div>
-          {/* <input
-            type="range"
-            min="0"
-            max="100"
-            value={volume}
-            onChange={handleChangeVolume}
-            className="range"
-          /> */}
           <div className="volume-slider-container">
             <input
               type="range"
@@ -141,9 +127,8 @@ function Home() {
               max="100"
               value={sliderValue}
               onChange={handleSliderChange}
-              className="slider"
+              className="slider range"
             />
-            {/* <div className="slider-value">{sliderValue}</div> */}
           </div>
         </div>
         <div className="generate-hashtags">

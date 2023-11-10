@@ -88,6 +88,11 @@ body {
   width: 45px;
 }
 
+.icon-cursor {
+  cursor: pointer;
+  margin-inline-start: 5px;
+}
+
 .icon:hover {
   background-color: rgb(246, 246, 246);
   border: 2px solid white;
@@ -215,15 +220,11 @@ body {
   background-color: #fff;
   border: 1px solid lightgray;
   border-radius: 5px;
+  cursor: pointer;
 }
-.approximate-words {
-  width: 35px;
-  height: 15px;
-  padding: 7px;
-  margin: 10px;
+.your-prompt-ai-button:hover {
+  background-color: rgb(237, 237, 237);
   border: 1px solid lightgray;
-  border-radius: 5px;
-  background-color: rgb(232, 232, 232);
 }
 
 .range {
@@ -318,13 +319,24 @@ body {
   background-color: #fff;
   border: 1px solid lightgray;
   color: lightgray;
+  cursor: pointer;
 }
 
 .approx-words-container {
-  margin-top: 15px;
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+.approximate-words {
+  width: 35px;
+  height: 15px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: rgb(232, 232, 232);
+  margin-top: 5px;
 }
 
 .volume-slider-container {
@@ -338,4 +350,14 @@ body {
 .slider-value {
   margin-top: 10px;
   font-size: 16px;
+}
+
+.more-option {
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  cursor: pointer;
 }
