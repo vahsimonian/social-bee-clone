@@ -217,9 +217,11 @@ body {
   border-radius: 5px;
 }
 .approximate-words {
-  width: 30px;
-  height: 20px;
+  width: 35px;
+  height: 15px;
+  padding: 7px;
   margin: 10px;
   border: 1px solid lightgray;
   border-radius: 5px;
+  background-color: rgb(232, 232, 232);
 }
