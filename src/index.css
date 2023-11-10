@@ -226,11 +226,6 @@ body {
   background-color: rgb(232, 232, 232);
 }
 
-/* .range {
-  color: lightgray;
-  background-color: lightgray;
-} */
-
 .range {
   -webkit-appearance: none;
   width: 100%;
@@ -243,7 +238,7 @@ body {
   height: 5px;
   cursor: pointer;
   animate: 0.2s;
-  background: #ddd;
+  background: #a8a8a8;
   border-radius: 5px;
 }
 
@@ -252,7 +247,8 @@ body {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background: #4caf50;
+  background: #ffffff;
+  border: 1px solid lightgray;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -8px;

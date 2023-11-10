@@ -14,6 +14,12 @@ function Home() {
   const [arrow, setArrow] = useState(arrowRightLine);
   const [isOpen, setIsOpen] = useState(!false);
   const [volume, setVolume] = useState(50); // Initial volume level (0 to 100)
+  const [selectedValue, setSelectedValue] = useState("");
+
+  // Handler function for the onChange event
+  const handleSelectChange = (event) => {
+    setSelectedValue(event.target.value);
+  };
 
   const handleChangeVolume = (e) => {
     const newVolume = e.target.value;
@@ -91,7 +97,13 @@ function Home() {
             <button className="your-prompt-ai-button">Friendly</button>
             <button className="your-prompt-ai-button">Informational</button>
             <button className="your-prompt-ai-button">Funny</button>
-            <button className="your-prompt-ai-button">More</button>
+            <select
+              className="your-prompt-ai-button"
+              value={selectedValue}
+              onChange={handleSelectChange}
+            >
+              <option>More</option>
+            </select>
           </div>
           <div>
             <span>Approximate words</span>
