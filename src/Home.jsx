@@ -13,6 +13,14 @@ import React from "react";
 function Home() {
   const [arrow, setArrow] = useState(arrowRightLine);
   const [isOpen, setIsOpen] = useState(!false);
+  const [volume, setVolume] = useState(50); // Initial volume level (0 to 100)
+
+  const handleChangeVolume = (e) => {
+    const newVolume = e.target.value;
+    setVolume(newVolume);
+    // Update audio element or use Web Audio API to adjust volume
+    // For example: audioElement.volume = newVolume / 100
+  };
 
   const arrowToggle = () => {
     setIsOpen(true);
@@ -89,6 +97,14 @@ function Home() {
             <span>Approximate words</span>
             <input type="number" className="approximate-words" />
           </div>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value={volume}
+            onChange={handleChangeVolume}
+            className="range"
+          />
         </div>
       </div>
       <div className={iconNavbarOpen}>
