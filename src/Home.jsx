@@ -15,6 +15,13 @@ function Home() {
   const [isOpen, setIsOpen] = useState(!false);
   const [volume, setVolume] = useState(50); // Initial volume level (0 to 100)
   const [selectedValue, setSelectedValue] = useState("");
+  const [checkedItems, setCheckedItems] = useState([
+    false,
+    false,
+    false,
+    false,
+    false,
+  ]);
 
   // Handler function for the onChange event
   const handleSelectChange = (event) => {
@@ -55,6 +62,12 @@ function Home() {
   ));
 
   const iconNavbarOpen = !isOpen ? "icon-navbar-none" : "icon-navbar ";
+
+  const handleCheckboxChange = (index) => {
+    const newCheckedItems = [...checkedItems];
+    newCheckedItems[index] = !newCheckedItems[index];
+    setCheckedItems(newCheckedItems);
+  };
 
   return (
     <div className="open-navbar">
@@ -118,6 +131,24 @@ function Home() {
             className="range"
           />
         </div>
+
+        {/* CHECKBOX */}
+
+        <div className="circle-checkbox-line">
+          {checkedItems.map((checked, index) => (
+            <div
+              key={index}
+              className={`checkbox ${checked ? "checked" : ""}`}
+              onClick={() => handleCheckboxChange(index)}
+            >
+              {index + 1}
+            </div>
+          ))}
+        </div>
+
+        {/* CHECKBOX */}
+
+        <input type="checkbox" name="subscribe" />
       </div>
       <div className={iconNavbarOpen}>
         <div className="your-prompts border-container">
