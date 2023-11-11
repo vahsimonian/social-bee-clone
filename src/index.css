@@ -361,3 +361,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.get-started-open-container {
+  margin-inline: 20px;
+}

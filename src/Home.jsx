@@ -156,33 +156,36 @@ function Home() {
         <button className="generate-btn">Generate</button>
       </div>
       <div className={iconNavbarOpen}>
-        <div className="your-prompts border-container">
-          {/* <div></div> */}
-          <div className="prompts-span-icon">
-            <span className="get-started">Get started</span>
+        <div className="get-started-open-container">
+          <div className="your-prompts border-container">
+            {/* <div></div> */}
+            <div className="prompts-span-icon">
+              <span className="get-started">Get started</span>
+            </div>
           </div>
-        </div>
-        <div>
-          <ul>
-            <li>
-              <p>
-                Pick a prompt from the left-hand side "Prompt templates"
-                panel,use the shuffle button to get a random prompt, or write
-                one form scratch
-              </p>
-            </li>
-            <li>
-              <p>
-                Write or edit your prompt with what want the AI to generate and
-                hit the Generate Button.
-              </p>
-            </li>
-            <li>
-              <p>
-                Select the results you like and hit the Share on social button.
-              </p>
-            </li>
-          </ul>
+          <div>
+            <ul>
+              <li>
+                <p>
+                  Pick a prompt from the left-hand side "Prompt templates"
+                  panel,use the shuffle button to get a random prompt, or write
+                  one form scratch
+                </p>
+              </li>
+              <li>
+                <p>
+                  Write or edit your prompt with what want the AI to generate
+                  and hit the Generate Button.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Select the results you like and hit the Share on social
+                  button.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
