@@ -7,7 +7,7 @@ import arrowLeftCircleFill from "./assets/arrow-left-circle-fill.png";
 import informationFill from "./assets/information-fill.png";
 import heartIcon from "./assets/heart-line.png";
 import shuffleIcon from "./assets/shuffle-line.png";
-
+import ReactPlayer from "react-player/youtube";
 import React from "react";
 
 function Home() {
@@ -165,26 +165,34 @@ function Home() {
           </div>
           <div>
             <ul>
-              <li>
+              <li className="list-style">
                 <p>
-                  Pick a prompt from the left-hand side "Prompt templates"
+                  1. Pick a prompt from the left-hand side "Prompt templates"
                   panel,use the shuffle button to get a random prompt, or write
                   one form scratch
                 </p>
               </li>
-              <li>
+              <li className="list-style">
                 <p>
-                  Write or edit your prompt with what want the AI to generate
+                  2. Write or edit your prompt with what want the AI to generate
                   and hit the Generate Button.
                 </p>
               </li>
-              <li>
+              <li className="list-style">
                 <p>
-                  Select the results you like and hit the Share on social
+                  3. Select the results you like and hit the Share on social
                   button.
                 </p>
               </li>
             </ul>
+            {/* <div > */}
+            <ReactPlayer
+              className="video-input"
+              width={"320px"}
+              height={"300px"}
+              url={"https://youtu.be/AaCZusd9Kco?si=rXS61Y1eC0xVHv85"}
+            />
+            {/* </div> */}
           </div>
         </div>
       </div>

@@ -366,3 +366,11 @@ body {
 .get-started-open-container {
   margin-inline: 20px;
 }
+
+.list-style {
+  list-style-type: none;
+}
+
+.video-input {
+  margin-inline-start: 40px;
+}
