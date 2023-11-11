@@ -160,6 +160,7 @@ body {
 
 .your-prompts {
   margin-top: 25px;
+  margin-bottom: -5px;
   display: flex;
   justify-content: space-between;
 }
@@ -199,7 +200,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-inline: 25px;
-  margin-top: 35px;
+  margin-top: 15px;
 }
 
 .your-prompt-input {
@@ -220,6 +221,7 @@ body {
   border: 1px solid lightgray;
   border-radius: 5px;
   cursor: pointer;
+  color: #3a3a3a;
 }
 .your-prompt-ai-button:hover {
   background-color: rgb(237, 237, 237);
