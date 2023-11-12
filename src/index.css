@@ -266,7 +266,7 @@ body {
 .generate-hashtags {
   margin: 15px 15px 0 25px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 

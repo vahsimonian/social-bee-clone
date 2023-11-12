@@ -13,7 +13,6 @@ import React from "react";
 function Home() {
   const [arrow, setArrow] = useState(arrowRightLine);
   const [isOpen, setIsOpen] = useState(!false);
-  const [volume, setVolume] = useState(50); // Initial volume level (0 to 100)
   const [selectedValue, setSelectedValue] = useState("");
   const [toggleIsTrue, setToggleIsTrue] = useState(false);
   const [sliderValue, setSliderValue] = useState(50); // Initial slider value
