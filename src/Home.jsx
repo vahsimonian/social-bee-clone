@@ -29,11 +29,6 @@ function Home() {
     setSelectedValue(event.target.value);
   };
 
-  // const handleChangeVolume = (e) => {
-  //   const newVolume = e.target.value;
-  //   setVolume(newVolume);
-  // };
-
   const arrowToggle = () => {
     setIsOpen(true);
     setArrow(arrowLeftCircleFill);
