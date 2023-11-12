@@ -154,44 +154,39 @@ function Home() {
         <button className="generate-btn">Generate</button>
       </div>
       <div className={`${iconNavbarOpen} get-started-container`}>
-        <div className="get-started-open-container">
-          <div className="your-prompts border-container">
-            {/* <div></div> */}
-            <div className="prompts-span-icon">
-              <span className="get-started">Get started</span>
-            </div>
+        <div className="your-prompts border-container">
+          <div className="prompts-span-icon">
+            <span className="get-started">Get started</span>
           </div>
-          <div>
-            <ul>
-              <li className="list-style">
-                <p>
-                  1. Pick a prompt from the left-hand side "Prompt templates"
-                  panel,use the shuffle button to get a random prompt, or write
-                  one form scratch
-                </p>
-              </li>
-              <li className="list-style">
-                <p>
-                  2. Write or edit your prompt with what want the AI to generate
-                  and hit the Generate Button.
-                </p>
-              </li>
-              <li className="list-style">
-                <p>
-                  3. Select the results you like and hit the Share on social
-                  button.
-                </p>
-              </li>
-            </ul>
-            {/* <div > */}
-            <ReactPlayer
-              className="video-input"
-              width={"320px"}
-              height={"300px"}
-              url={"https://youtu.be/AaCZusd9Kco?si=rXS61Y1eC0xVHv85"}
-            />
-            {/* </div> */}
-          </div>
+        </div>
+        <div>
+          <ul>
+            <li className="list-style">
+              <p>
+                1. Pick a prompt from the left-hand side "Prompt templates"
+                panel,use the shuffle button to get a random prompt, or write
+                one form scratch
+              </p>
+            </li>
+            <li className="list-style">
+              <p>
+                2. Write or edit your prompt with what want the AI to generate
+                and hit the Generate Button.
+              </p>
+            </li>
+            <li className="list-style">
+              <p>
+                3. Select the results you like and hit the Share on social
+                button.
+              </p>
+            </li>
+          </ul>
+          <ReactPlayer
+            className="video-input"
+            width={"320px"}
+            height={"300px"}
+            url={"https://youtu.be/AaCZusd9Kco?si=rXS61Y1eC0xVHv85"}
+          />
         </div>
       </div>
     </div>

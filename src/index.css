@@ -364,7 +364,7 @@ body {
 }
 
 .get-started-open-container {
-  margin-inline: 20px;
+  /* margin-inline: 20px; */
 }
 
 .list-style {
@@ -376,4 +376,5 @@ body {
 }
 
 .get-started-container {
+  border-radius: 0 10px 10px 0;
 }
