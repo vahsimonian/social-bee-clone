@@ -186,8 +186,7 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  top: 30%;
-  width: 2px;
+  width: 1px;
   height: 850px;
   background-color: lightgray;
   border-radius: 5px;
