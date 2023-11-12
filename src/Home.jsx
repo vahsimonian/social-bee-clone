@@ -14,15 +14,19 @@ function Home() {
   const [arrow, setArrow] = useState(arrowRightLine);
   const [isOpen, setIsOpen] = useState(!false);
   const [selectedValue, setSelectedValue] = useState("");
-  const [toggleIsTrue, setToggleIsTrue] = useState(false);
+  const [toggleIsTrueHashtag, setToggleIsTrueHashtag] = useState(false);
+  const [toggleIsTrueEmoji, setToggleIsTrueEmoji] = useState(false);
   const [sliderValue, setSliderValue] = useState(50); // Initial slider value
 
   const handleSliderChange = (e) => {
     setSliderValue(e.target.value);
   };
 
-  const toggleButton = () => {
-    setToggleIsTrue(!toggleIsTrue);
+  const toggleButtonHashtag = () => {
+    setToggleIsTrueHashtag(!toggleIsTrueHashtag);
+  };
+  const toggleButtonEmoji = () => {
+    setToggleIsTrueEmoji(!toggleIsTrueEmoji);
   };
 
   const handleSelectChange = (event) => {
@@ -127,19 +131,19 @@ function Home() {
         </div>
         <div className="generate-hashtags">
           Generate hashtags
-          <div className="toggle-btn-bg">
+          <div className="toggle-btn-bg" onClick={toggleButtonHashtag}>
             <button
-              className={`dark-mode-toggle ${toggleIsTrue ? "dark" : ""}`}
-              onClick={toggleButton}
+              className={`dark-mode-toggle ${
+                toggleIsTrueHashtag ? "dark" : ""
+              }`}
             ></button>
           </div>
         </div>
         <div className="generate-hashtags">
           Inlcude Emoji
-          <div className="toggle-btn-bg">
+          <div className="toggle-btn-bg" onClick={toggleButtonEmoji}>
             <button
-              className={`dark-mode-toggle ${toggleIsTrue ? "dark" : ""}`}
-              onClick={toggleButton}
+              className={`dark-mode-toggle ${toggleIsTrueEmoji ? "dark" : ""}`}
             ></button>
           </div>
         </div>

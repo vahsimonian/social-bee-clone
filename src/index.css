@@ -283,10 +283,7 @@ body {
 }
 
 .dark-mode-toggle.dark {
-  /* background-color: #333333;  */
-  transform: translateX(
-    -10px
-  ); /* Move the button to the right when in dark mode */
+  transform: translateX(-10px);
 }
 
 .toggle-btn-bg {
