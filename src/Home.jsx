@@ -155,7 +155,7 @@ function Home() {
         </div>
         <button className="generate-btn">Generate</button>
       </div>
-      <div className={iconNavbarOpen}>
+      <div className={`${iconNavbarOpen} get-started-container`}>
         <div className="get-started-open-container">
           <div className="your-prompts border-container">
             {/* <div></div> */}
