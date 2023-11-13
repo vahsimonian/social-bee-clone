@@ -140,7 +140,6 @@ body {
   margin-left: 65px;
   background-color: #fff;
   border-radius: 10px 0 0 10px;
-  /* border-radius: 10px; */
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
@@ -151,10 +150,9 @@ body {
   width: 420px;
   height: 900px;
   background-color: white;
-  border-radius: 0 0 10px 0;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 6px 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .icon-navbar-none {
@@ -182,7 +180,6 @@ body {
 .border-container {
   position: relative;
   padding-left: 10px;
-  /* height: 80px; */
 }
 
 .border-container::before {
@@ -207,7 +204,6 @@ body {
 }
 
 .your-prompt-input {
-  /* margin-inline: 25px; */
   padding: 50px 50px;
   border-radius: 5px;
   border: 1px solid lightgray;
@@ -278,8 +274,8 @@ body {
   cursor: pointer;
   border: none;
   border-radius: 50%;
-  background-color: #fff; /* Initial background color for light mode */
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add a transition for smooth color change and movement */
+  background-color: #fff;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .dark-mode-toggle.dark {
@@ -361,10 +357,6 @@ body {
   border: 1px solid lightgray;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.get-started-open-container {
-  /* margin-inline: 20px; */
 }
 
 .list-style {
