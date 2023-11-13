@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { navbarData } from "./data";
 import socialBeeIcon from "../src/assets/socialbee-logo.png";
 import homeIcon from "./assets/home-icon.png";
