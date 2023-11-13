@@ -19,13 +19,13 @@ function Navbar() {
         <img src={socialBeeIcon} alt="socialBee" className="nav-img" />
       </div>
       <div className="iva">
-        <span className="curs-point home-icon nav-hover">
-          <img src={homeIcon} alt="home" width={15} />
-          Home
-        </span>
+        <div className="iva-home nav-hover">
+          <img src={homeIcon} alt="home" width={16.5} />
+          <span className="curs-point">Home</span>
+        </div>
         {element}
-        <span className="curs-point nav-hover">Book a Call</span>
-        <span className="curs-point nav-hover">Overview</span>
+        <span className="curs-point nav-hover book">Book a Call</span>
+        <span className="curs-point nav-hover book">Overview</span>
       </div>
       <button className="sign-btn">
         <span className="curs-point">Sing Up / </span>

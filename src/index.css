@@ -44,6 +44,17 @@ body {
   left: 150px;
 }
 
+.iva-home {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px;
+}
+
+.book {
+  padding: 8px;
+}
+
 .nav-link {
   max-width: 250px;
   display: flex;
@@ -67,8 +78,13 @@ body {
   margin-left: -6px;
 }
 
+.nav-hover {
+  transition: all 0.25s ease-in-out;
+}
+
 .nav-hover:hover {
-  background-color: red;
+  box-shadow: 0px 0px 10px rgba(107, 106, 106, 0.5);
+  border-radius: 10px;
 }
 
 .icon {
