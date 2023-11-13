@@ -37,6 +37,7 @@ body {
 }
 
 .iva {
+  cursor: pointer;
   display: flex;
   gap: 15px;
   align-items: center;
@@ -94,7 +95,12 @@ body {
   background-color: #fff;
   border: 2px solid lightgray;
   cursor: pointer;
-  /* border: 2px magenta solid; */
+  transition: all 0.5s ease-in-out;
+}
+
+.icon:hover {
+  background-color: rgb(246, 246, 246);
+  border: 2px solid white;
 }
 
 .icon-name-container {
@@ -107,11 +113,6 @@ body {
 .icon-cursor {
   cursor: pointer;
   margin-inline-start: 5px;
-}
-
-.icon:hover {
-  background-color: rgb(246, 246, 246);
-  border: 2px solid white;
 }
 
 .icon-name-container > span {
