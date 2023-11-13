@@ -139,6 +139,17 @@ body {
   height: 900px;
   margin-left: 65px;
   background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.icon-container-open {
+  margin-top: 40px;
+  width: 420px;
+  height: 900px;
+  margin-left: 65px;
+  background-color: #fff;
   border-radius: 10px 0 0 10px;
   display: flex;
   flex-direction: column;

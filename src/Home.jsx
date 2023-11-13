@@ -12,7 +12,7 @@ import React from "react";
 
 function Home() {
   const [arrow, setArrow] = useState(arrowRightLine);
-  const [isOpen, setIsOpen] = useState(!false);
+  const [isOpen, setIsOpen] = useState(false);
   const [selectedValue, setSelectedValue] = useState("");
   const [toggleIsTrueHashtag, setToggleIsTrueHashtag] = useState(false);
   const [toggleIsTrueEmoji, setToggleIsTrueEmoji] = useState(false);
@@ -62,7 +62,7 @@ function Home() {
 
   return (
     <div className="open-navbar">
-      <div className="icon-container">
+      <div className={`${!isOpen ? "icon-container" : "icon-container-open"}`}>
         <div className="prompt">
           <span>Prompt templates</span>
           <img
