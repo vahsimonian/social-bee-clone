@@ -1,9 +1,13 @@
 import React from "react";
+import chatButton from "../src/assets/chat-3-line.png";
 
 function SearchButton() {
   return (
     <div>
-      <input type="text" className="search-input" />
+      <button className="search-input">
+        <img src={chatButton} alt="" />
+      </button>
+      {/* <input type="text"  /> */}
     </div>
   );
 }
