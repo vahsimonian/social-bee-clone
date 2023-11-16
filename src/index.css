@@ -404,8 +404,9 @@ body {
   right: 25px;
   bottom: 25px;
   width: 25px;
+  padding: 10px;
   height: 25px;
   border-radius: 50px;
   border: none;
-  background-color: #000;
+  background-color: rgb(255, 179, 0);
 }
