@@ -398,3 +398,14 @@ body {
 .get-started-container {
   border-radius: 0 10px 10px 0;
 }
+
+.search-input {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  border: none;
+  background-color: #000;
+}
